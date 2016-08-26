@@ -77,10 +77,8 @@ multiply(4, 3, function(answer){
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 var contains = function(array, name, callBack) {
-  return callBack(name in array);
+  return callBack(array.indexOf(name) !== -1);
 }
-
-
 
   //Code Here for contains
 
