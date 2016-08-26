@@ -61,6 +61,10 @@ last(names, function(lastName){
 
 
   //Code Here for multiply
+  var multiply = function(num1, num2, cb) {
+    return cb(num1 * num2);
+
+  }
 
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -72,7 +76,9 @@ multiply(4, 3, function(answer){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
+var contains = function(array, name, callBack) {
+  return callBack(name in array);
+}
 
 
 
