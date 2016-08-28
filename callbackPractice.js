@@ -95,7 +95,8 @@ contains(names, 'Colt', function(result){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-var uniq = function(inputArray, callback){
+    //Code Here for uniq
+    var uniq = function(inputArray, callback){
       var newArray = [];
 
       for (var i = 0; i < inputArray.length; i++) {
@@ -105,8 +106,7 @@ var uniq = function(inputArray, callback){
       }
       callback(newArray);
 
-  }
-    //Code Here for uniq
+    }
 
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -114,30 +114,31 @@ uniq(names, function(uniqArr){
 
 
 
-
-
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
-
-
     //Code Here for each
+    var each = function(inputArray, callback) {
+      for (var i = 0; i < inputArray.length; i++) {
+        callback(inputArray[i], i);
+      }
+    }
 
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
 });
 
 
-
-
-
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 
-
-
-
  //code here for getUserById
+var getUserById = function(users, id, callback) {
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].id === '16t') {
+      callback(users[i]);
+    }
+  }
+}
 
 var users = [
   {
