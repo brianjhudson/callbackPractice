@@ -35,7 +35,6 @@ first(names, function(firstName){
 });
 
 
-
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 
@@ -96,9 +95,17 @@ contains(names, 'Colt', function(result){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
+var uniq = function(inputArray, callback){
+      var newArray = [];
 
+      for (var i = 0; i < inputArray.length; i++) {
+        if (newArray.indexOf(inputArray[i]) === -1) {
+          newArray.push(inputArray[i]);
+        }
+      }
+      callback(newArray);
 
-
+  }
     //Code Here for uniq
 
 uniq(names, function(uniqArr){
